@@ -1,0 +1,144 @@
+#navbar {
+  position: fixed;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 20px;
+  font-family: 'Crimson Text', serif;
+  top: 0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: fixed;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 20px;
+  font-family: 'Crimson Text', serif;
+  top: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Crimson Text', serif;
+  border: ;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #006400;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #006400;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.nav {
+  top: 0;
+}
+
+body {
+
+  background-color: black;
+  color: white;
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+}
+
+.welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+}
+
+.projects {
+  height: 500px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+ }
+
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-link {
+  display: grid;
+  text-align: center;
+
+  }
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  }
+
+.p {
+  justify-content: center;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  font-family: 'Crimson Text', serif;
+}
+
+.btn-show-all {
+  font-size: 1rem;
+  background: var(--main-white);
+  transition: background 0.3s ease-out;
+color: white;
+font-family: 'Crimson Text', serif;
+}
+
+a {
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}

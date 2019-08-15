@@ -1,0 +1,49 @@
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(200px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+  grid-gap: 20px;
+
+}
+
+nav#navbar {
+  grid-area: navbar;
+  position: top;
+
+
+}
+
+nav#navbar a {
+  display: block;
+  border: 1px solid blue;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: blue;
+}
+
+main#main.doc {
+  grid-area: mainContent;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+code {
+  background: #CCC;
+  display: block;
+  paddding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  div.main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent"
+  }
+
+  nav#navbar {
+    position: inherit;
+  }
+}

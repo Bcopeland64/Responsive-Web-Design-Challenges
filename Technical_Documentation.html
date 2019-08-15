@@ -1,0 +1,84 @@
+<div class="main-body">
+
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <a href="#Introduction" class="nav-link">Introduction</a>
+  <a href="#Python" class="nav-link">Python</a>
+  <a href="#Variables" class="nav-link">Variables</a>
+  <a href="#Scope" class="nav-link">Scope</a>
+  <a href="#Functions" class="nav-link">Functions</a>
+</nav>
+
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+
+    <p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.</p>
+  </section>
+  <section class="main-section" id="Python">
+    <header>Python</header>
+    <p>Python was conceived in the late 1980s as a successor to the ABC language. Python 2.0, released 2000, introduced features like list comprehensions and a garbage collection system capable of collecting reference cycles. Python 3.0, released 2008, was a major revision of the language that is not completely backward-compatible, and much Python 2 code does not run unmodified on Python 3. Due to concern about the amount of code written for Python 2, support for Python 2.7 (the last release in the 2.x series) was extended to 2020. Language developer Guido van Rossum shouldered sole responsibility for the project until July 2018 but now shares his leadership as a member of a five-person steering council.</p>
+    <p>Python interpreters are available for many operating systems. A global community of programmers develops and maintains CPython, an open source reference implementation. A non-profit organization, the Python Software Foundation, manages and directs resources for Python and CPython development. </p>
+
+    <code>print("Hello, World!")</code><br>
+    <code>if 5 > 2:
+      print("Five is greater than two!")</code><br>
+
+    <ul>
+      <li>Indentation</li>
+      <li>Statements and Flow Control</li>
+      <li>Expressions</li>
+      <li>Methods</li>
+      <li>Typing</li>
+      <li>Mathmatics</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Variables">
+   <header>Variables</header>
+    <p>In many programming languages, variables are statically typed. That means a variable is initially declared to have a specific data type, and any value assigned to it during its lifetime must always have that type.
+
+Variables in Python are not subject to this restriction. In Python, a variable may be assigned a value of one type and then later re-assigned a value of a different type</p>
+    <p>What is actually happening when you make a variable assignment? This is an important question in Python, because the answer differs somewhat from what you’d find in many other programming languages.
+
+Python is a highly object-oriented language. In fact, virtually every item of data in a Python program is an object of a specific type or class. (This point will be reiterated many times over the course of these tutorials.)</p>
+  </section>
+
+  <code>x = 5
+y = "John"
+print(x)
+print(y)</code><br>
+
+  <code>x = 4 # x is of type int
+x = "Sally" # x is now of type str
+print(x)</code><br>
+
+  <section class="main-section" id="Scope">
+    <header>Scope</header>
+    <p>Variables can only reach the area in which they are defined, which is called scope. Think of it as the area of code where variables can be used. Python supports global variables (usable in the entire program) and local variables.
+
+By default, all variables declared in a function are local variables. To access a global variable inside a function, it’s required to explicitly define ‘global variable’.</p>
+    <p>If a variable can be reached anywhere in the code is called a global variable. If a variable is known only inside the scope, we call it a local variable.</p>
+  </section>
+  <section class="main-section" id="Functions">
+   <header>Functions</header>
+    <p>Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Also functions are a key way to define interfaces so programmers can share their code.</p>
+    <p>Python makes use of blocks. A block is a area of code. Where a block line is more Python code (even another block), and the block head is of the following format: block_keyword block_name(argument1,argument2, ...) Block keywords you already know are "if", "for", and "while". Functions in python are defined using the block keyword "def", followed with the function's name as the block's name. Functions may also receive arguments (variables passed from the caller to the function). Functions may return a value to the caller, using the keyword- 'return'.</p>
+
+    <code>def my_function():
+  print("Hello from a function")</code><br>
+
+    <code>def my_function():
+  print("Hello from a function")
+  my_function()</code><br>
+
+    <code>def my_function(fname):
+  print(fname + " Refsnes")
+  my_function("Emil")
+  my_function("Tobias")
+  my_function("Linus")</code><br>
+
+  </section>
+    </main>
+      </div>
